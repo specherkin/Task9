@@ -82,7 +82,7 @@ fi
 
 # Priv check
 echo -e "\n[+] Starting the exploit in [\033[94m$mode\033[0m] mode with the following privileges: \n`id`"
-id | grep -q tomcat
+id | grep -q tcuser
 if [ $? -ne 0 ]; then
 	echo -e "\n[!] You need to execute the exploit as tomcat user! Exiting.\n"
 	exit 3
